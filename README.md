@@ -1,4 +1,4 @@
-#This is a Python GUI that serves as as launch point for running scripts
+# This is a Python GUI that serves as as launch point for running scripts
 
 I built this GUI to centralize all of the scripts that I and my team members use daily for supporting endpoints and networks.
 
