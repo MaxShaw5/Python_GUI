@@ -2,7 +2,7 @@
 
 I built this GUI to centralize all of the scripts that I and my team members use daily for supporting endpoints and networks.
 
-It's very simplistic but extermely functional.
+It's very simplistic but extremely functional.
 
 Here's a screenshot of what it looks like:
 
