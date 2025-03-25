@@ -1,6 +1,7 @@
 import subprocess
 from subprocess import Popen
 
+
 #C:\\DATA\\Python_GUI\\scripts_for_running\\
 
 
@@ -83,3 +84,27 @@ def ping_count():
     stdout, stderr = run_ping_script.communicate()
     print(run_ping_script)
 #End Network Related Functions
+
+def creative_cloud():
+    cc_installer_location = r"C:\DATA\Python_GUI\installers\Creative_Cloud_Set-Up.exe"
+    run_cc_intaller = subprocess.Popen(cc_installer_location)
+    
+
+def lenovo_updates():
+    updates__location = r"C:\DATA\Python_GUI\installers\system_update_5.08.03.59.exe"
+    run_sys_updates = subprocess.Popen(updates__location)
+
+
+def set_est():
+    est_location = r"C:\DATA\Python_GUI_Dev\scripts_for_running\est.ps1"
+    run_est_location = subprocess.run([r'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe', est_location ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
+    
+    
+def set_cst():
+    cst_location = r"C:\DATA\Python_GUI_Dev\scripts_for_running\cst.ps1"
+    run_cst_location = subprocess.run([r'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe', cst_location ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
+    
+    
+def set_pst():
+    pst_location = r"C:\DATA\Python_GUI_Dev\scripts_for_running\pst.ps1"
+    run_pst_location = subprocess.run([r'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe', pst_location ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)

@@ -15,7 +15,7 @@ except tk.TclError:
     print("Icon file not found or incorrect format.")
     
 root.title("DP04 LAUNCHPAD")
-root.geometry("400x500")
+root.geometry("400x750")
 
 
 w = Label(root, text ='DP04 Launchpad', font = "100")  
@@ -58,6 +58,38 @@ net_events_button.pack(pady=10)
 
 ping_button = ttk.Button(root, text="Ping List of PCs", command=ping_count)
 ping_button.pack(pady=10)
+
+
+def open_install_list():
+    submenu = tk.Toplevel(root)
+    submenu.title("Install Menu")
+    ttk.Label(submenu, text="Software Install Menu").pack()
+    ttk.Button(submenu, text = "Back To Main Menu", command = submenu.destroy).pack(pady=10)
+    cc_installer_button = ttk.Button(submenu, text="Install Creative Cloud", command=creative_cloud)
+    cc_installer_button.pack(pady=10)
+    sys_updates_button = ttk.Button(submenu, text="System Updates", command=lenovo_updates)
+    sys_updates_button.pack(pady=10)
+
+
+installers_button = ttk.Button(root, text="See List Of Installable Software", command=open_install_list)
+installers_button.pack(pady=10)
+
+
+def open_time_zones():
+    submenu = tk.Toplevel(root)
+    submenu.title("Change Your Time Zone")
+    ttk.Label(submenu, text="Change Your Time Zone").pack()
+    ttk.Button(submenu, text = "Back To Main Menu", command = submenu.destroy).pack(pady=10)
+    est_button = ttk.Button(submenu, text="Eastern Standard Time", command=set_est)
+    est_button.pack(pady=10)
+    cst_button = ttk.Button(submenu, text="Central Standard Time", command=set_cst)
+    cst_button.pack(pady=10)
+    pst_button = ttk.Button(submenu, text="Pacific Standard Time", command=set_pst)
+    pst_button.pack(pady=10)
+
+
+time_zones_button = ttk.Button(root, text="Set Time Zone", command=open_time_zones)
+time_zones_button.pack(pady=10)
 
 
 sv_ttk.set_theme("dark")

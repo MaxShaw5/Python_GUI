@@ -1,6 +1,8 @@
-__pycache__/*
-build/*
+__pycache__/
+build/
 scripts_for_running/*
 temp_files_etc
 DP04_LAUNCHPAD.exe
 DP04_LAUNCHPAD.spec
+installers
+dist/
