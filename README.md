@@ -6,7 +6,8 @@ It's very simplistic but extremely functional.
 
 Here's a screenshot of what it looks like:
 
-![image](https://github.com/user-attachments/assets/e3244740-98e3-4303-8eeb-da11ea70731e)
+![image](https://github.com/user-attachments/assets/d1c9c170-9c06-4f91-8f29-be9fda287b12)
+
 
 
 Most of the scripts can be found in my other repo here: https://github.com/MaxShaw5/PowerShellScripts
